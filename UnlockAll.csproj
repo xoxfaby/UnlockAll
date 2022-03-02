@@ -2,11 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
-	
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="BepInEx.Core" Version="5.4.9" />
