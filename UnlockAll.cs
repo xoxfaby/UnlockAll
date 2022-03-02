@@ -18,7 +18,7 @@ namespace UnlockAll
 
         protected override void Awake()
         {
-            UnlockAllPlugin.Hooks.Add(typeof(RoR2.XmlUtility), "GetStatsField", XmlUtility_GetStatsField);
+            UnlockAllPlugin.Hooks.Add<System.Xml.Linq.XElement, string, RoR2.Stats.StatSheet>(typeof(RoR2.XmlUtility), "GetStatsField", XmlUtility_GetStatsField);
         }
 
         private static void XmlUtility_GetStatsField(Action<System.Xml.Linq.XElement, string, RoR2.Stats.StatSheet> orig, System.Xml.Linq.XElement container, string fieldName, RoR2.Stats.StatSheet dest)
