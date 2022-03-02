@@ -1,0 +1,29 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "XoXFaby"
+name = "UnlockAll"
+versionNumber = "0.0.0"
+description = "Unlocks everything PERMANENTLY"
+websiteUrl = "https://github.com/xoxfaby/UnlockAll"
+containsNsfwContent = false
+
+[package.dependencies]
+bbepis-BepInExPack = "5.4.9"
+XoXFaby-BetterUnityPlugin = "1.1.1"
+
+[build]
+icon = "./icon.png"
+readme = "../README.md"
+outdir = "../zip"
+
+
+[[build.copy]]
+source = "../bin/Release/netstandard2.0/UnlockAll.dll"
+target = "UnlockAll.dll"
+
+[publish]
+repository = "https://thunderstore.io"
+communities = ["riskofrain2"]
+categories = ["mods", "client-side"]
