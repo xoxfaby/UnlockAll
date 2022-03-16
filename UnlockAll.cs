@@ -4,7 +4,7 @@ using BepInEx;
 
 namespace UnlockAll
 {
-    [BepInPlugin("com.xoxfaby.UnlockAll", "UnlockAll", "1.0.4")]
+    [BepInPlugin("com.xoxfaby.UnlockAll", "UnlockAll", "1.0.5")]
     public class UnlockAllPlugin : BetterUnityPlugin.BetterUnityPlugin<UnlockAllPlugin>
     {
         public override BaseUnityPlugin typeReference => throw new NotImplementedException();

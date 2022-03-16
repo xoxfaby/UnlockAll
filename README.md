@@ -21,5 +21,8 @@ https://github.com/xoxfaby/UnlockAll
 
 ## Changelog
 
+## v1.0.5
+ - Removed a hook that was unlocking everything for multiplayer clients joining sessions hosted with this mod. 
+
 ## v1.0.0
  - Initial Release
